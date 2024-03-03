@@ -1,5 +1,5 @@
 {
-  "name": "billymoor Task Runner", 
+  "name": "billymoorTaskRunner", 
   "version": "1.0.0", 
   "description": "by billymoor", 
   "main": "./src/index.js",
