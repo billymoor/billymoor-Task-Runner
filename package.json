@@ -1,6 +1,6 @@
 {
   "name": "billymoor",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "by billymoor",
   "main": "./src/index.js",
   "scripts": {
@@ -19,6 +19,7 @@
   "license": "MIT",
   "dependencies": {
     "colorfull-logger": "^1.1.0",
+    "mishacli": "^1.0.1",
     "ts-pdf-maker": "^1.0.1"
   }
 }
