@@ -1,63 +1,45 @@
-# PDF Generator
+# Task Runner
 
-A simple yet powerful PDF generation tool written in TypeScript.
+Task Runner is a lightweight Node.js package for running tasks easily from the command line. It allows you to define tasks as functions and execute them using a simple command.
 
 ## Installation
 
-```bash
-npm install pdf-generator
+To install Task Runner, simply use npm:
+
+```
+npm install -g task-runner
 ```
 
 ## Usage
 
-```javascript
-const PDFGenerator = require("pdf-generator");
+After installing Task Runner globally, you can use it from the command line by specifying the task name.
 
-// Create a new PDFGenerator instance
-const pdfGenerator = new PDFGenerator();
-
-// Add content to the PDF
-pdfGenerator
-  .addText("Hello, this is a PDF generated using PDFGenerator!", {
-    fontSize: 20,
-    align: "center",
-  })
-  .addPage()
-  .addText("This is page 2 of the PDF.", {
-    y: 100,
-    align: "center",
-  });
-
-// Save the PDF
-pdfGenerator.save();
+```sh
+task-runner <taskName>
 ```
 
-## API
+For example, to run the "hello" task:
 
-### `PDFGenerator(options?: PDFGeneratorOptions)`
+```sh
+task-runner hello
+```
 
-Creates a new instance of PDFGenerator with optional options.
+To run the "build" task:
 
-- `options.filename`: Specify the filename for the generated PDF. Default is `'output.pdf'`.
+```sh
+task-runner build
+```
 
-### `addText(text: string, options?: TextOptions): PDFGenerator`
+## Defining Tasks
 
-Adds text to the PDF document.
+You can define tasks by adding them to the `task-runner.js` file. Each task is defined as a function and added to the `TaskRunner` instance using the `addTask` method.
 
-- `text`: The text content to add.
-- `options`: Optional parameters for text formatting, such as fontSize, font, alignment, etc.
-
-### `addPage(): PDFGenerator`
-
-Adds a new page to the PDF document.
-
-### `save(): void`
-
-Saves the PDF document to the specified filename.
-
-## Example
-
-Check the `example` directory for an example usage of the PDFGenerator.
+```javascript
+taskRunner.addTask('taskName', () => {
+    // Task logic goes here
+    console.log('Task executed!');
+});
+```
 
 ## License
 
