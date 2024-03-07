@@ -1,6 +1,6 @@
 {
   "name": "billymoor",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "by billymoor",
   "main": "./src/index.js",
   "scripts": {
