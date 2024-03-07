@@ -18,6 +18,7 @@
   "author": "billymoor",
   "license": "MIT",
   "dependencies": {
+    "billymoor-graph-ql-second": "^1.0.2",
     "billymoorgraphql": "^1.0.2",
     "colorfull-logger": "^1.1.0",
     "mishacli": "^1.0.1",
