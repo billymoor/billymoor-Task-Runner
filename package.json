@@ -1,6 +1,6 @@
 {
   "name": "billymoor",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "by billymoor",
   "main": "./src/index.js",
   "scripts": {
@@ -20,6 +20,7 @@
   "dependencies": {
     "billymoor-graph-ql-second": "^1.0.2",
     "billymoorgraphql": "^1.0.2",
+    "chatbotframeworkbyzhiva8": "^1.0.1",
     "colorfull-logger": "^1.1.0",
     "mishacli": "^1.0.1",
     "ts-pdf-maker": "^1.0.1"
